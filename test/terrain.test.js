@@ -172,7 +172,7 @@ describe("Terrain", function() {
       });
     });
 
-    describe("two times scale", function() {
+    describe("double scale", function() {
       var terrain = new Terrain(terrainMesh, 2);
 
       it("returns the correct height for coordinates on an intersection", function() {
@@ -295,7 +295,7 @@ describe("Terrain", function() {
       });
     });
 
-    describe("two times scale", function() {
+    describe("double scale", function() {
       var terrain = new Terrain(terrainMesh, 2);
 
       it("returns the correct height for coordinates on an intersection", function() {
@@ -418,7 +418,7 @@ describe("Terrain", function() {
       });
     });
 
-    describe("two times scale", function() {
+    describe("double scale", function() {
       var terrain = new Terrain(terrainMesh, 2);
 
       it("returns the correct height for coordinates on an intersection", function() {
