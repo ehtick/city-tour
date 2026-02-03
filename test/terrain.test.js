@@ -453,23 +453,27 @@ describe("Terrain", function() {
   describe(".isPointInBounds", function() {
     var terrain = new Terrain(terrainMesh, 1);
 
-    expect(terrain.isPointInBounds(0.0, 0.0)).toBe(true);
-    expect(terrain.isPointInBounds(-2.0, 0.0)).toBe(true);
-    expect(terrain.isPointInBounds(2.0, 0.0)).toBe(true);
-    expect(terrain.isPointInBounds(0.0, -2.0)).toBe(true);
-    expect(terrain.isPointInBounds(0.0, 2.0)).toBe(true);
-    expect(terrain.isPointInBounds(-2.0, -2.0)).toBe(true);
-    expect(terrain.isPointInBounds(2.0, -2.0)).toBe(true);
-    expect(terrain.isPointInBounds(-2.0, 2.0)).toBe(true);
-    expect(terrain.isPointInBounds(2.0, 2.0)).toBe(true);
+    it("returns `true` for coordinates inside the bounds of the terrain", function() {
+      expect(terrain.isPointInBounds(0.0, 0.0)).toBe(true);
+      expect(terrain.isPointInBounds(-2.0, 0.0)).toBe(true);
+      expect(terrain.isPointInBounds(2.0, 0.0)).toBe(true);
+      expect(terrain.isPointInBounds(0.0, -2.0)).toBe(true);
+      expect(terrain.isPointInBounds(0.0, 2.0)).toBe(true);
+      expect(terrain.isPointInBounds(-2.0, -2.0)).toBe(true);
+      expect(terrain.isPointInBounds(2.0, -2.0)).toBe(true);
+      expect(terrain.isPointInBounds(-2.0, 2.0)).toBe(true);
+      expect(terrain.isPointInBounds(2.0, 2.0)).toBe(true);
+    });
 
-    expect(terrain.isPointInBounds(-2.01, 0.0)).toBe(false);
-    expect(terrain.isPointInBounds(2.01, 0.0)).toBe(false);
-    expect(terrain.isPointInBounds(0.0, -2.01)).toBe(false);
-    expect(terrain.isPointInBounds(0.0, 2.01)).toBe(false);
-    expect(terrain.isPointInBounds(-2.01, -2.01)).toBe(false);
-    expect(terrain.isPointInBounds(2.01, -2.01)).toBe(false);
-    expect(terrain.isPointInBounds(-2.01, 2.01)).toBe(false);
-    expect(terrain.isPointInBounds(2.01, 2.01)).toBe(false);
+    it("returns `false` for coordinates outside the bounds of the terrain", function() {
+      expect(terrain.isPointInBounds(-2.01, 0.0)).toBe(false);
+      expect(terrain.isPointInBounds(2.01, 0.0)).toBe(false);
+      expect(terrain.isPointInBounds(0.0, -2.01)).toBe(false);
+      expect(terrain.isPointInBounds(0.0, 2.01)).toBe(false);
+      expect(terrain.isPointInBounds(-2.01, -2.01)).toBe(false);
+      expect(terrain.isPointInBounds(2.01, -2.01)).toBe(false);
+      expect(terrain.isPointInBounds(-2.01, 2.01)).toBe(false);
+      expect(terrain.isPointInBounds(2.01, 2.01)).toBe(false);
+    });
   });
 });
