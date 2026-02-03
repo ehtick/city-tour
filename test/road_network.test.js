@@ -219,7 +219,11 @@ describe("RoadNetwork", function() {
 
 
   describe(".addEdge", function() {
-    var roadNetwork = new RoadNetwork(terrain);
+    var roadNetwork;
+
+    beforeEach(function() {
+      roadNetwork = new RoadNetwork(terrain);
+    });
 
     it("allows adding an edge in a valid location", function() {
       expect(roadNetwork.hasEdgeBetween(0, 0, 1, 0)).toBe(false);
