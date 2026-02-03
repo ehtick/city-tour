@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
+import { CityTourMath } from "./../math.js";
 
 /*
    Generates target points for the camera to move to, simulating the camera

@@ -2,7 +2,7 @@
 
 import * as THREE from "three";
 
-import { Config } from "./../config";
+import { Config } from "./../config.js";
 
 const ANTENNA_WIDTH = 0.023570226039552;
 const ANTENNA_DEPTH = 0.023570226039552;

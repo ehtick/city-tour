@@ -1,7 +1,7 @@
 "use strict";
 
-import { PathFinder } from "./../path_finder";
-import { RoadNetwork } from "./../road_network";
+import { PathFinder } from "./../path_finder.js";
+import { RoadNetwork } from "./../road_network.js";
 
 var RoadNetworkSimplifier = (function() {
   var blockHasBottomTouchingBuilding = function(block) {

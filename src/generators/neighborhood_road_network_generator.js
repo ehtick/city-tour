@@ -1,11 +1,11 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
-import { PathFinder } from "./../path_finder";
-import { RoadNetwork } from "./../road_network";
-import { TerrainCandidateRoadNetwork } from "./../terrain_candidate_road_network";
-import { BridgeGenerator } from "./bridge_generator";
-import { CircleGrowthRoadGenerator } from "./circle_growth_road_generator";
+import { CityTourMath } from "./../math.js";
+import { PathFinder } from "./../path_finder.js";
+import { RoadNetwork } from "./../road_network.js";
+import { TerrainCandidateRoadNetwork } from "./../terrain_candidate_road_network.js";
+import { BridgeGenerator } from "./bridge_generator.js";
+import { CircleGrowthRoadGenerator } from "./circle_growth_road_generator.js";
 
 var NeighborhoodRoadNetworkGenerator = (function() {
   var buildRoadNetwork = function(terrain, neighborhoods, config) {

@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
+import { CityTourMath } from "./../math.js";
 
 var MotionGenerator = function(start, target, easingFunction) {
   var next = function() {

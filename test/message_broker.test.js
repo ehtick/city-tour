@@ -1,6 +1,6 @@
 "use strict";
 
-import { MessageBroker } from "./../src/message_broker";
+import { MessageBroker } from "./../src/message_broker.js";
 
 describe("MessageBroker", function() {
   let messageBroker = null;

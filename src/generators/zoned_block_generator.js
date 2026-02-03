@@ -1,7 +1,7 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
-import { RoadNetwork } from "./../road_network";
+import { CityTourMath } from "./../math.js";
+import { RoadNetwork } from "./../road_network.js";
 
 var ZonedBlockGenerator = (function() {
   var HALF_BLOCK_COLUMNS = 32;

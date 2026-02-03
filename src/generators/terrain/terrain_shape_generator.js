@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../../math";
+import { CityTourMath } from "./../../math.js";
 
 var TerrainShapeGenerator = (function() {
   var addPlateau = function(terrainCoordinates, centerX, centerZ, width, height, depth) {

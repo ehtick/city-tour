@@ -1,7 +1,7 @@
 "use strict";
 
-import { HydraulicErosionGenerator } from "./../../../src/generators/terrain/hydraulic_erosion_generator";
-import { TerrainShapeGenerator } from "./../../../src/generators/terrain/terrain_shape_generator";
+import { HydraulicErosionGenerator } from "./../../../src/generators/terrain/hydraulic_erosion_generator.js";
+import { TerrainShapeGenerator } from "./../../../src/generators/terrain/terrain_shape_generator.js";
 
 describe("HydraulicErosionGenerator", function() {
   // A flat plane

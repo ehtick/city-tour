@@ -2,8 +2,8 @@
 
 import * as THREE from "three";
 
-import { CityTourMath } from "./../math";
-import { WorldTouch } from "./world_touch";
+import { CityTourMath } from "./../math.js";
+import { WorldTouch } from "./world_touch.js";
 
 var NavigationController = function(sceneView, mapCamera, terrain, timerLoop, messageBroker) {
   var DOWN_ARROW = "&#9660;";

@@ -1,8 +1,8 @@
 "use strict";
 
-import { Config } from "./../config";
-import { CityTourMath } from "./../math";
-import { RoadNetwork } from "./../road_network";
+import { Config } from "./../config.js";
+import { CityTourMath } from "./../math.js";
+import { RoadNetwork } from "./../road_network.js";
 
 var CircleGrowthRoadGenerator = (function() {
   var addNeighborhoodRoads = function(terrain, roadNetwork, neighborhoodCenterX, neighborhoodCenterZ, config) {

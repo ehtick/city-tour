@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
+import { CityTourMath } from "./../math.js";
 
 var NeighborhoodGenerator = (function() {
   var MIN_DISTANCE_BETWEEN_NEIGHBORHOODS = 10;

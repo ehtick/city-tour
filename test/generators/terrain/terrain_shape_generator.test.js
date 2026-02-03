@@ -1,6 +1,6 @@
 "use strict";
 
-import { TerrainShapeGenerator } from "./../../../src/generators/terrain/terrain_shape_generator";
+import { TerrainShapeGenerator } from "./../../../src/generators/terrain/terrain_shape_generator.js";
 
 describe("TerrainShapeGenerator", function() {
   var flatTerrainCoordinates = [

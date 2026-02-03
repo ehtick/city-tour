@@ -2,8 +2,8 @@
 
 import * as THREE from "three";
 
-import { RenderView } from "./render_view";
-import { Builder } from "./../meshes/builder";
+import { RenderView } from "./render_view.js";
+import { Builder } from "./../meshes/builder.js";
 
 const GRID_PLANE_MESH_GROUP_NAME = "gridPlaneMeshes";
 const TERRAIN_MESH_GROUP_NAME = "terrainMeshes";

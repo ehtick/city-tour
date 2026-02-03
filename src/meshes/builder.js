@@ -2,10 +2,10 @@
 
 import * as THREE from "three";
 
-import { Config } from "./../config";
-import { BuildingMeshBuilder } from "./building_mesh_builder";
-import { RoadMeshBuilder } from "./road_mesh_builder";
-import { TerrainMeshBuilder } from "./terrain_mesh_builder";
+import { Config } from "./../config.js";
+import { BuildingMeshBuilder } from "./building_mesh_builder.js";
+import { RoadMeshBuilder } from "./road_mesh_builder.js";
+import { TerrainMeshBuilder } from "./terrain_mesh_builder.js";
 
 const CITY_CENTER_NEIGHBORHOOD_MARKER_COLOR = Object.freeze([1.0, 1.0, 0.0]);
 const GENERIC_NEIGHBORHOOD_MARKER_COLOR = Object.freeze([1.0, 0.0, 1.0]);

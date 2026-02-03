@@ -2,7 +2,7 @@
 
 import * as THREE from "three";
 
-import { CityTourMath } from "./../math";
+import { CityTourMath } from "./../math.js";
 
 const HALF_PI = Math.PI * 0.5;
 const TWO_PI = Math.PI * 2;

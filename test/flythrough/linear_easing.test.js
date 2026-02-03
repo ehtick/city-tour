@@ -1,6 +1,6 @@
 "use strict";
 
-import { LinearEasing } from "./../../src/flythrough/easing";
+import { LinearEasing } from "./../../src/flythrough/easing.js";
 
 describe("LinearEasing", function() {
   it("number of frames is a positive integer", function() {

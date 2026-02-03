@@ -1,9 +1,9 @@
 "use strict";
 
-import { Config } from "./config";
-import { CityTourMath } from "./math";
-import { RoadNetwork } from "./road_network";
-import { BridgeGenerator } from "./generators/bridge_generator";
+import { Config } from "./config.js";
+import { CityTourMath } from "./math.js";
+import { RoadNetwork } from "./road_network.js";
+import { BridgeGenerator } from "./generators/bridge_generator.js";
 
 var TerrainCandidateRoadNetwork = function(terrain, roadNetwork, maxRoadAngle) {
   var addBridgeEdge = function(edges, x, z, directionX, directionZ) {

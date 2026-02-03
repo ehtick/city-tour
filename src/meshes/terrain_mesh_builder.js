@@ -2,8 +2,8 @@
 
 import * as THREE from "three";
 
-import { Config } from "./../config";
-import { RoadNetwork } from "./../road_network";
+import { Config } from "./../config.js";
+import { RoadNetwork } from "./../road_network.js";
 
 const LAND_COLOR_R = 0.0;
 const LAND_COLOR_G = 0.48;

@@ -2,19 +2,19 @@
 
 import * as THREE from "three";
 
-import { MessageBroker } from "./../message_broker";
-import { RoadNetwork } from "./../road_network";
-import { Terrain } from "./../terrain";
+import { MessageBroker } from "./../message_broker.js";
+import { RoadNetwork } from "./../road_network.js";
+import { Terrain } from "./../terrain.js";
 
-import { CityConfigService } from "./city_config_service";
-import { MenusController } from "./menus_controller";
-import { MapCamera } from "./map_camera";
-import { NavigationController } from "./navigation_controller";
-import { NavigationTouchController } from "./navigation_touch_controller";
-import { SceneView } from "./scene_view";
-import { TimerLoop } from "./timer_loop";
+import { CityConfigService } from "./city_config_service.js";
+import { MenusController } from "./menus_controller.js";
+import { MapCamera } from "./map_camera.js";
+import { NavigationController } from "./navigation_controller.js";
+import { NavigationTouchController } from "./navigation_touch_controller.js";
+import { SceneView } from "./scene_view.js";
+import { TimerLoop } from "./timer_loop.js";
 
-import { WorldGenerator } from "./../generators/world_generator";
+import { WorldGenerator } from "./../generators/world_generator.js";
 
 THREE.ColorManagement.enabled = false;
 

@@ -1,7 +1,7 @@
 "use strict";
 
-import { LinearEasing } from "./../../src/flythrough/easing";
-import { MotionGenerator } from "./../../src/flythrough/motion_generator";
+import { LinearEasing } from "./../../src/flythrough/easing.js";
+import { MotionGenerator } from "./../../src/flythrough/motion_generator.js";
 
 describe("MotionGenerator", function() {
   it("target is larger than start", function() {

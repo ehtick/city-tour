@@ -2,9 +2,9 @@
 
 import * as THREE from "three";
 
-import { CityTourMath } from "./../math";
-import { Config } from "./../config";
-import { WorldTouch } from "./world_touch";
+import { CityTourMath } from "./../math.js";
+import { Config } from "./../config.js";
+import { WorldTouch } from "./world_touch.js";
 
 const HALF_PI = Math.PI * 0.5;
 

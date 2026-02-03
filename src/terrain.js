@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./math";
+import { CityTourMath } from "./math.js";
 
 var Terrain = function(coordinates, scale) {
   var LAND_HEIGHT_COMPONENT = "landHeight";

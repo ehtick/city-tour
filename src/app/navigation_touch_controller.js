@@ -1,8 +1,8 @@
 "use strict";
 
-import { FlythroughGestureProcessor } from "./flythrough_gesture_processor";
-import { GestureProcessor } from "./gesture_processor";
-import { WorldTouchCollection } from "./world_touch_collection";
+import { FlythroughGestureProcessor } from "./flythrough_gesture_processor.js";
+import { GestureProcessor } from "./gesture_processor.js";
+import { WorldTouchCollection } from "./world_touch_collection.js";
 
 var NavigationTouchController = function(sceneView, mapCamera, terrain, messageBroker) {
   var el = sceneView.domElement();

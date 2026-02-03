@@ -1,8 +1,8 @@
 "use strict";
 
-import { PathFinder } from "./../src/path_finder";
-import { RoadNetwork } from "./../src/road_network";
-import { Terrain } from "./../src/terrain";
+import { PathFinder } from "./../src/path_finder.js";
+import { RoadNetwork } from "./../src/road_network.js";
+import { Terrain } from "./../src/terrain.js";
 
 describe("PathFinder", function() {
   var FLAT_TERRAIN_POINT = Object.freeze({landHeight: 0.0, waterHeight: 0.0});

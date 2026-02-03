@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
+import { CityTourMath } from "./../math.js";
 
 var BuildingsGenerator = (function() {
   var MIN_STORY_HEIGHT = 0.1;

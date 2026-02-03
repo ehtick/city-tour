@@ -1,12 +1,12 @@
 "use strict";
 
-import { RoadNetwork } from "./../road_network";
-import { BuildingsGenerator } from "./buildings_generator";
-import { NeighborhoodGenerator } from "./neighborhood_generator";
-import { NeighborhoodRoadNetworkGenerator } from "./neighborhood_road_network_generator";
-import { RoadNetworkSimplifier } from "./road_network_simplifier";
-import { ZonedBlockGenerator } from "./zoned_block_generator";
-import { TerrainGenerator } from "./terrain/terrain_generator";
+import { RoadNetwork } from "./../road_network.js";
+import { BuildingsGenerator } from "./buildings_generator.js";
+import { NeighborhoodGenerator } from "./neighborhood_generator.js";
+import { NeighborhoodRoadNetworkGenerator } from "./neighborhood_road_network_generator.js";
+import { RoadNetworkSimplifier } from "./road_network_simplifier.js";
+import { ZonedBlockGenerator } from "./zoned_block_generator.js";
+import { TerrainGenerator } from "./terrain/terrain_generator.js";
 
 var WorldGenerator = (function() {
   var generate = function(config) {

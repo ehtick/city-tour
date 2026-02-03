@@ -1,8 +1,8 @@
 "use strict";
 
-import { CityTourMath } from "./../math";
-import { SmoothStepEasing } from "./easing";
-import { MotionGenerator } from "./motion_generator";
+import { CityTourMath } from "./../math.js";
+import { SmoothStepEasing } from "./easing.js";
+import { MotionGenerator } from "./motion_generator.js";
 
 var VehicleView = function(vehicleController) {
   var MIN_ROTATION_X_OFFSET = -Math.PI / 6;

@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../../math";
+import { CityTourMath } from "./../../math.js";
 
 // Adapted from http://ranmantaru.com/blog/2011/10/08/water-erosion-on-heightmap-terrain/
 var HydraulicErosionGenerator = (function() {

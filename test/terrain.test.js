@@ -1,6 +1,6 @@
 "use strict";
 
-import { Terrain } from "./../src/terrain";
+import { Terrain } from "./../src/terrain.js";
 
 describe("Terrain", function() {
   var terrainMesh = [

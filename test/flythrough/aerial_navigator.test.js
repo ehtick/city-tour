@@ -1,8 +1,8 @@
 "use strict";
 
-import { RoadNetwork } from "./../../src/road_network";
-import { Terrain } from "./../../src/terrain";
-import { AerialNavigator } from "./../../src/flythrough/aerial_navigator";
+import { RoadNetwork } from "./../../src/road_network.js";
+import { Terrain } from "./../../src/terrain.js";
+import { AerialNavigator } from "./../../src/flythrough/aerial_navigator.js";
 
 describe("AerialNavigator", function() {
   var TERRAIN_MESH = [

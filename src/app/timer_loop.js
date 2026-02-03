@@ -2,13 +2,13 @@
 
 import * as THREE from "three";
 
-import { Timer } from "./../timer";
-import { Animation } from "./../flythrough/animation";
-import { SineEasing } from "./../flythrough/easing";
-import { MotionGenerator } from "./../flythrough/motion_generator";
-import { StaticMotionGenerator } from "./../flythrough/motion_generator";
-import { VehicleController } from "./../flythrough/vehicle_controller";
-import { VehicleView } from "./../flythrough/vehicle_view";
+import { Timer } from "./../timer.js";
+import { Animation } from "./../flythrough/animation.js";
+import { SineEasing } from "./../flythrough/easing.js";
+import { MotionGenerator } from "./../flythrough/motion_generator.js";
+import { StaticMotionGenerator } from "./../flythrough/motion_generator.js";
+import { VehicleController } from "./../flythrough/vehicle_controller.js";
+import { VehicleView } from "./../flythrough/vehicle_view.js";
 
 const HALF_PI = Math.PI * 0.5;
 

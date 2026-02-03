@@ -1,7 +1,7 @@
 "use strict";
 
-import { RoadNetwork } from "./../src/road_network";
-import { Terrain } from "./../src/terrain";
+import { RoadNetwork } from "./../src/road_network.js";
+import { Terrain } from "./../src/terrain.js";
 
 describe("RoadNetwork", function() {
   var TERRAIN_MESH = [

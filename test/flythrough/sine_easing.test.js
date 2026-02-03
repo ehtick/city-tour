@@ -1,6 +1,6 @@
 "use strict";
 
-import { SineEasing } from "./../../src/flythrough/easing";
+import { SineEasing } from "./../../src/flythrough/easing.js";
 
 describe("SineEasing", function() {
   it("number of frames is a positive integer; moving forward through range", function() {

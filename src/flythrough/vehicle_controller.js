@@ -2,19 +2,19 @@
 
 import * as THREE from "three";
 
-import { CityTourMath } from "./../math";
-import { PathFinder } from "./../path_finder";
-import { AerialNavigator } from "./aerial_navigator";
-import { Animation } from "./animation";
-import { CurveAnimation } from "./curve_animation";
-import { DrivingCurveBuilder } from "./driving_curve_builder";
-import { LinearEasing } from "./easing";
-import { SineEasing } from "./easing";
-import { SmoothStepEasing } from "./easing";
-import { SteepEasing } from "./easing";
-import { MotionGenerator } from "./motion_generator";
-import { StaticMotionGenerator } from "./motion_generator";
-import { RoadNavigator } from "./road_navigator";
+import { CityTourMath } from "./../math.js";
+import { PathFinder } from "./../path_finder.js";
+import { AerialNavigator } from "./aerial_navigator.js";
+import { Animation } from "./animation.js";
+import { CurveAnimation } from "./curve_animation.js";
+import { DrivingCurveBuilder } from "./driving_curve_builder.js";
+import { LinearEasing } from "./easing.js";
+import { SineEasing } from "./easing.js";
+import { SmoothStepEasing } from "./easing.js";
+import { SteepEasing } from "./easing.js";
+import { MotionGenerator } from "./motion_generator.js";
+import { StaticMotionGenerator } from "./motion_generator.js";
+import { RoadNavigator } from "./road_navigator.js";
 
 const QUARTER_PI = Math.PI * 0.25;
 const HALF_PI = Math.PI * 0.5;

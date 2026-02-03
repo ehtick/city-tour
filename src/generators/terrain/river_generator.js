@@ -2,7 +2,7 @@
 
 import * as THREE from "three";
 
-import { CityTourMath } from "./../../math";
+import { CityTourMath } from "./../../math.js";
 
 var RiverGenerator = (function() {
   var SUB_DIVISIONS = 1;

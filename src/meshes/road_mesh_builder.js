@@ -2,8 +2,8 @@
 
 import * as THREE from "three";
 
-import { Config } from "./../config";
-import { RoadNetwork } from "./../road_network";
+import { Config } from "./../config.js";
+import { RoadNetwork } from "./../road_network.js";
 
 const SIDEWALK_WIDTH = Config.STREET_WIDTH * 0.24;
 const SIDEWALK_DEPTH = Config.STREET_DEPTH * 0.24;

@@ -1,6 +1,6 @@
 "use strict";
 
-import { CityTourMath } from "./../src/math";
+import { CityTourMath } from "./../src/math.js";
 
 describe("CityTourMath", function() {
   describe(".lerp()", function() {

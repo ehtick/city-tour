@@ -1,7 +1,7 @@
 "use strict";
 
-import { CityTourMath } from "./math";
-import { Config } from "./config";
+import { CityTourMath } from "./math.js";
+import { Config } from "./config.js";
 
 var RoadNetwork = function(terrain) {
   var Intersection = function(x, z, height, gradeType) {

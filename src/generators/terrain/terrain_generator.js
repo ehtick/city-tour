@@ -2,13 +2,13 @@
 
 import * as THREE from "three";
 
-import { CityTourMath } from "./../../math";
-import { Terrain } from "./../../terrain";
-import { BlurEroder } from "./blur_eroder";
-import { DiamondSquareGenerator } from "./diamond_square_generator";
-import { HydraulicErosionGenerator } from "./hydraulic_erosion_generator";
-import { RiverGenerator } from "./river_generator";
-import { TerrainShapeGenerator } from "./terrain_shape_generator";
+import { CityTourMath } from "./../../math.js";
+import { Terrain } from "./../../terrain.js";
+import { BlurEroder } from "./blur_eroder.js";
+import { DiamondSquareGenerator } from "./diamond_square_generator.js";
+import { HydraulicErosionGenerator } from "./hydraulic_erosion_generator.js";
+import { RiverGenerator } from "./river_generator.js";
+import { TerrainShapeGenerator } from "./terrain_shape_generator.js";
 
 var TerrainGenerator = (function() {
   var SCALE = 1;   // Should be a power of 0.5

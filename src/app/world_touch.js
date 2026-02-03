@@ -1,6 +1,6 @@
 "use strict";
 
-import { Config } from "./../config";
+import { Config } from "./../config.js";
 
 /*
   Converts a normalized screen vector to a 3D point in the world, based on the current camera position.
