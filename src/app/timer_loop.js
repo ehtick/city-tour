@@ -3,7 +3,6 @@
 import * as THREE from "three";
 
 import { Timer } from "./../timer";
-import { WorldTouch } from "./world_touch";
 import { Animation } from "./../flythrough/animation";
 import { SineEasing } from "./../flythrough/easing";
 import { MotionGenerator } from "./../flythrough/motion_generator";

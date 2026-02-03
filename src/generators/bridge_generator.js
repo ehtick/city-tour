@@ -1,7 +1,5 @@
 "use strict";
 
-import { RoadNetwork } from "./../road_network";
-
 var BridgeGenerator = (function() {
   var MAX_BRIDGE_LENGTH = Number.POSITIVE_INFINITY;
   var MIN_BRIDGE_HEIGHT_FROM_WATER = 0.1;
