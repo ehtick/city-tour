@@ -70,7 +70,7 @@ describe("Terrain", function() {
       expect(terrain.maxZ()).toBe(0.5);
     });
 
-    it("returns the correct size bounds at quarter scale", function() {
+    it("returns the correct size bounds at double scale", function() {
       var terrain = new Terrain(terrainMesh, 2);
 
       expect(terrain.minX()).toBe(-4);
