@@ -14,8 +14,8 @@ describe("MessageBroker", function() {
       func2: function() { },
     };
 
-    jest.spyOn(obj, "func1");
-    jest.spyOn(obj, "func2");
+    spyOn(obj, "func1");
+    spyOn(obj, "func2");
   });
 
   it("calls the appropriate subscribed functions when topic is published", function() {
