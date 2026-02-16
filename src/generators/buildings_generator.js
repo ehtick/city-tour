@@ -93,7 +93,7 @@ var BuildingsGenerator = (function() {
         }
       }
 
-      if (block !== []) {
+      if (block.length > 0) {
         if (blocks[x] === undefined) {
           blocks[x] = [];
         }
