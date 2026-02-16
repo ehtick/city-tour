@@ -16,6 +16,7 @@ describe("MessageBroker", function() {
 
     spyOn(obj, "func1");
     spyOn(obj, "func2");
+    spyOn(console, "log");
   });
 
   it("calls the appropriate subscribed functions when topic is published", function() {
@@ -32,6 +33,8 @@ describe("MessageBroker", function() {
     expect(obj.func2).toHaveBeenCalledTimes(2);
     expect(obj.func2).toHaveBeenCalledWith({});
     expect(obj.func2).toHaveBeenCalledWith({key: "value"});
+
+    expect(console.log).toHaveBeenCalledTimes(0);
   });
 
   it("does not call a function that is subscribed to a different topic than the one published", function() {
@@ -42,6 +45,8 @@ describe("MessageBroker", function() {
 
     expect(obj.func1).toHaveBeenCalledTimes(0);
     expect(obj.func2).toHaveBeenCalledTimes(0);
+    expect(console.log).toHaveBeenCalledTimes(2);
+    expect(console.log).toHaveBeenCalledWith("Warning: No listeners for topic other.topic");
   });
 
   it("allows subscribing a function to the same topic more than once", function() {
@@ -56,6 +61,8 @@ describe("MessageBroker", function() {
     expect(obj.func1).toHaveBeenCalledWith({key: "value"});
 
     expect(obj.func2).toHaveBeenCalledTimes(0);
+
+    expect(console.log).toHaveBeenCalledTimes(0);
   });
 
   it("does not call a function if the subscription for the published topic has been removed", function() {
@@ -70,6 +77,7 @@ describe("MessageBroker", function() {
     expect(obj.func1).toHaveBeenCalledWith({});
     expect(obj.func1).toHaveBeenCalledWith({key: "value"});
     expect(obj.func2).toHaveBeenCalledTimes(0);
+    expect(console.log).toHaveBeenCalledTimes(0);
 
     result = messageBroker.removeSubscriber("some.topic", subscriberID);
     expect(result).toBe(true);
@@ -80,6 +88,8 @@ describe("MessageBroker", function() {
     // The subscribed function should not have been called any additional times
     expect(obj.func1).toHaveBeenCalledTimes(2);
     expect(obj.func2).toHaveBeenCalledTimes(0);
+    expect(console.log).toHaveBeenCalledTimes(2);
+    expect(console.log).toHaveBeenCalledWith("Warning: No listeners for topic some.topic");
   });
 
   it("returns the correct result if attempting to removing a non-existent subscription", function() {
@@ -96,5 +106,6 @@ describe("MessageBroker", function() {
     expect(obj.func1).toHaveBeenCalledWith({});
     expect(obj.func1).toHaveBeenCalledWith({key: "value"});
     expect(obj.func2).toHaveBeenCalledTimes(0);
+    expect(console.log).toHaveBeenCalledTimes(0);
   });
 });

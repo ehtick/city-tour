@@ -32,7 +32,7 @@ let MessageBroker = function() {
   };
 
   let publish = function(topic, data) {
-    if (subscribers[topic] === undefined || subscribers[topic] === []) {
+    if (subscribers[topic] === undefined || subscribers[topic].length === 0) {
       console.log("Warning: No listeners for topic " + topic);
     }
     else {
