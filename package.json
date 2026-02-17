@@ -9,28 +9,16 @@
   "homepage": "https://joelstrait.com/citytour/",
   "type": "module",
   "scripts": {
-    "build": "webpack --config webpack.config.js --mode production",
-    "serve": "webpack serve --config webpack.config.js --mode production --compress --no-bonjour --no-hot --no-live-reload --no-static --no-web-socket-server",
+    "build": "node build.js",
+    "serve": "node build.js --serve",
     "test": "jasmine --config=jasmine.config.js"
   },
-  "browserslist": [
-    "since 2020-10-15"
-  ],
   "dependencies": {
     "three": "0.162.0"
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
-    "@babel/preset-env": "7.28.5",
-    "babel-loader": "10.0.0",
-    "copy-webpack-plugin": "13.0.1",
-    "css-loader": "7.1.2",
-    "css-minimizer-webpack-plugin": "7.0.2",
-    "jasmine": "6.0.0",
-    "mini-css-extract-plugin": "2.9.4",
-    "webpack": "5.102.1",
-    "webpack-cli": "6.0.1",
-    "webpack-dev-server": "5.2.2"
+    "esbuild": "0.27.0",
+    "jasmine": "6.0.0"
   },
   "engines": {
     "node": ">=20.0.0"
